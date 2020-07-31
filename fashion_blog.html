@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Bloggme One</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <title>Full Story</title>
     <!--Including BootstrapCDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +33,7 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ml-auto pl-5">
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">Travels</a>
                     <a href="#" class="nav-item nav-link">Fashion</a>
                     <a href="#" class="nav-item nav-link">Technology</a>
@@ -45,7 +46,60 @@
         </nav>
         <!--End of navigation bar-->
         <hr>
+        <center>
 
+            <section class="main-card">
+                <div class="card-content">
+                    <div class="content-left">
+                        <img class="full-img"
+                            src="https://images.unsplash.com/photo-1592431454781-ec4870757ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Unsplash Image">
+                    </div>
+                    <div class="content-right">
+
+                        <h2>Outdoor Experience</h2>
+                        <p>It’s windy. The cool breeze of the lake. It gives, a sense of beauty, in motion. All is
+                            flowing,
+                            rushing and tide-And I sit in wonder, dreaming beside.</p>
+                        <div class="mini-imgs">
+                            <img class="mini-img"
+                                src="https://images.unsplash.com/photo-1593346279196-b971a8e46966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80"
+                                alt="Unsplash Image" onclick="changeImg(1)">
+                            <img class="mini-img"
+                                src="https://images.unsplash.com/photo-1594884592479-1f5bad0b696d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2002&q=80"
+                                alt="Unsplash Image" onclick="changeImg(2)">
+                            <img class="mini-img"
+                                src="https://images.unsplash.com/photo-1592431454781-ec4870757ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                                alt="Unsplash Image" onclick="changeImg(3)">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <div class="main-card" style="height: auto;">
+                <p>With top-tier fashion bloggers raking in multimillion-dollar campaigns, it’s no wonder every
+                    self-proclaimed fashionista wants to launch a personal style site. But not all outfit posts are
+                    created equal. These fashion bloggers stand out from the pack thanks to their one-of-a-kind
+                    sartorial sense and sharp business acumen. Click through the slideshow above to meet the dynamic
+                    women ruling the blogosphere and our picks for the best fashion blogs of 2019. May the best blog
+                    win.</p>
+            </div>
+        </center>
+
+        <script>
+            var fullImg = document.querySelector(".full-img");
+            var miniImg = document.querySelectorAll(".mini-img");
+
+            function changeImg(x) {
+
+                var targetImg = miniImg[x - 1];
+                var imgAttr = targetImg.getAttribute("src");
+
+                fullImg.setAttribute("src", imgAttr);
+
+            }
+
+        </script>
         <hr>
         <!--Creating Footer-->
         <footer class="footer-section">
