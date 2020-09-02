@@ -39,7 +39,7 @@
                     <a href="#" class="nav-item nav-link">News</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link">Login/Register</a>
+                    <a href="php/user/index.php" class="nav-item nav-link">Login/Register</a>
                 </div>
             </div>
         </nav>
@@ -128,11 +128,10 @@
                                     <li><a href="#">about</a></li>
                                     <li><a href="#">services</a></li>
                                     <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">Contact</a></li>
                                     <li><a href="#">About us</a></li>
                                     <li><a href="#">Our Services</a></li>
                                     <li><a href="#">Expert Team</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="contact.php">Contact us</a></li>
                                     <li><a href="#">Latest News</a></li>
                                 </ul>
                             </div>
