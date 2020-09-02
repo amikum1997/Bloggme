@@ -18,7 +18,7 @@
       <input class="pass" type="password" align="center" name="password" placeholder="Password">
       <button type="submit" class="submit" name="login_user" align="center">Sign in</button>
       <p class="forgot" align="center"><a href="register.php">Register Here</a> </p>
-      <p class="forgot-pass" align="right"><a href="#">Forgot Password?</p>
+      <p class="forgot-pass" align="right"><a href="forgotpassword.php">Forgot Password?</p>
             
                 
     </div>
