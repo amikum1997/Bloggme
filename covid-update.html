@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Covid19 Update</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .banner-box {
+            background-color: #ffffff;
+            height: auto;
+            display: flex;
+            border-radius: 20px;
+            padding: 10px;
+            color: black;
+            margin-left: 20px;
+            justify-content: space-evenly;
+        }
+
+        .banner-box>p {
+            font-size: 0.7em;
+            background-color: #ffffff;
+        }
+
+        .infobox {
+            background-color: #ffffff;
+        }
+
+        .infobox p {
+            background-color: #ffffff;
+        }
+
+        .infobox h5 {
+            background-color: #ffffff;
+        }
+
+        .banner-box img {
+            height: 150px;
+            width: 270px;
+            border-radius: 20px;
+        }
+
+        .banner-box h4 {
+            background-color: #ffffff;
+            padding-left: 5%;
+        }
+
+        .banner-box form {
+            background-color: #ffffff;
+        }
+
+        .fetch-data1 {
+            margin: 5px;
+            display: flexbox;
+            background-image: linear-gradient(to right, #eb3349, #f45c43);
+            border-radius: 10px;
+        }
+
+        .cards img {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 990px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .banner-box>p {
+                font-size: 0.6em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="logo-header">
+            <img src="./img/bloggme.PNG" class="rounded mx-auto d-block" alt="logo">
+        </div>
+        <!--Creating Navbar from bootstrap 4 components-->
+        <nav class="navbar navbar-expand-md navbar-light justify-content-center">
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto pl-5">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="covid-update.html" class="nav-item nav-link active">Covid19 Update</a>
+                    <a href="#" class="nav-item nav-link">Fashion</a>
+                    <a href="#" class="nav-item nav-link">Technology</a>
+                    <a href="#" class="nav-item nav-link">News</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="php/user/index.php" class="nav-item nav-link">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+        <!--End of navigation bar-->
+        <hr>
+        <div class="flex-container">
+            <div style="flex-grow: 12">
+                <div class="banner-box">
+
+                    <form>
+                        <select name="state" id="state" class="form-control" onchange="fetchSelectedData()">
+                            <option value="select">Select State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar
+                                Islands
+                            </option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadar and
+                                Nagar
+                                Haveli and Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </form>
+                    <h4>Select State To Show The Data</h4>
+                </div>
+                <div class="banner-box" style="margin-top:2%;">
+                    <div class="infobox">
+                        <p>Total</p>
+                        <h5 id="total" style="color:red"></h5>
+                    </div>
+                    <div class="infobox">
+                        <p>active</p>
+                        <h5 id="active" style="color:orange"></h5>
+                    </div>
+                    <div class="infobox">
+                        <p>cured</p>
+                        <h5 id="cured" style="color:green"></h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <a href="fashion_blog.html">
+                <div class="card">
+                    <img src="img/symtoms(1).png" alt="symptom">
+                </div>
+            </a>
+            <div class="card">
+                <img src="img/symtoms(2).png" alt="symptom">
+            </div>
+            <div class="card">
+                <img src="img/symtoms(3).png" alt="symptom">
+            </div>
+            <div class="card">
+                <img src="img/symtoms(4).png" alt="symptom">
+            </div>
+            <div class="card">
+                <img src="img/symtoms(5).png" alt="symptom">
+            </div>
+            <div class="card">
+                <img src="img/symtoms(6).png" alt="symptom">
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        function fetchSelectedData() {
+            var statename = document.getElementById("state").value;
+            if (statename == "select") {
+                document.getElementById("total").innerHTML = "----";
+                document.getElementById("active").innerHTML = "----";
+                document.getElementById("cured").innerHTML = "----";
+                document.getElementById("death").innerHTML = "----";
+            }
+            else {
+
+                var e = document.getElementById("state");
+                var result = e.options[e.selectedIndex].value;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var states = JSON.parse(this.responseText);
+                        document.getElementById("total").innerHTML = states.data[0].total;
+                        document.getElementById("active").innerHTML = states.data[0].active;
+                        document.getElementById("cured").innerHTML = states.data[0].cured;
+                        document.getElementById("death").innerHTML = states.data[0].death;
+                    }
+                };
+                xmlhttp.open("GET", "http://covid19-india-adhikansh.herokuapp.com/state/" + result, true);
+                xmlhttp.send();
+            }
+
+        }
+    </script>
+</body>
+
+</html>
