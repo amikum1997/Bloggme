@@ -1,0 +1,36 @@
+1 - Color code changed to 3 digit hexdecimal code.
+files effected - 
+               1 - about.css
+2 - Fluid margin diclaired instead of fixed margrin
+file effected - 
+              1 - about.css
+3 - space and comment removed
+file effected - 
+              1 - about.css
+4 - 0px changed to 0
+file effected - 
+              1 - main.css
+5 - Color code changed to 3 digit hexdecimal code
+file effected - 
+              1 - main.css
+6 - global spacing used for different screen size
+file effected - 
+              1 - main.css
+7 - rem used insted of pixel where needed
+file effected -
+              1 - main.css line 221
+8 - css minified
+file effected - 
+              1 - main.css
+9 - All border property written in one line.
+file effected - 
+              1 - login.css
+10 - Color code minimized to 3 hexadeimal value.
+file effected - 
+              1 - login.css
+11 - fluid layout used.
+file effected - 
+              1 - login.css
+12 - all padding in one line.
+file effectyed - 
+               1 - login.css
