@@ -42,3 +42,4 @@ file effected -
 16 - Use of grid
 17 - Group css selector used
 18 - removed unwanted links (link creating error 404 and 410)
+19 - https://gtmetrix.com/reports/amikum1997.github.io/tclGSmyh
