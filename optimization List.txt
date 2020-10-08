@@ -32,5 +32,13 @@ file effected -
 file effected - 
               1 - login.css
 12 - all padding in one line.
-file effectyed - 
+file effected - 
                1 - login.css
+13 - avoided use of @import in css
+file effected - 
+              1 - All css files
+14 - all images compressed (lossless image compression)
+15 - Use of Flex 
+16 - Use of grid
+17 - Group css selector used
+18 - removed unwanted links (link creating error 404 and 410)
